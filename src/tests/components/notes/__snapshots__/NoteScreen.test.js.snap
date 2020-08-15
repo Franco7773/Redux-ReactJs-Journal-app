@@ -1,0 +1,74 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Pruebas en Debe de mostrarse correctamente 1`] = `
+<div
+  className="notes__main-content"
+>
+  <div
+    className="notes__appbar"
+  >
+    <span>
+      27 de Agosto 2020
+    </span>
+    <input
+      id="fileSelector"
+      name="file"
+      onChange={[Function]}
+      style={
+        Object {
+          "display": "none",
+        }
+      }
+      type="file"
+    />
+    <div>
+      <button
+        className="btn"
+        onClick={[Function]}
+      >
+        Picture
+      </button>
+      <button
+        className="btn"
+        onClick={[Function]}
+      >
+        Save
+      </button>
+    </div>
+  </div>
+  <div
+    className="notes__content"
+  >
+    <input
+      autoComplete="off"
+      className="notes__content--title-input"
+      name="title"
+      onChange={[Function]}
+      placeholder="Some awesome title"
+      type="text"
+      value="Hello"
+    />
+    <textarea
+      className="notes__content--textarea"
+      name="body"
+      onChange={[Function]}
+      placeholder="What happened today?"
+      value="Galaxy"
+    />
+    <div
+      className="notes__content--image"
+    >
+      <img
+        alt="imagen"
+        src="https://google.com/photo.jpg"
+      />
+    </div>
+  </div>
+  <button
+    className="btn btn--danger"
+    onClick={[Function]}
+  >
+    Delete
+  </button>
+</div>
+`;
