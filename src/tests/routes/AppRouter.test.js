@@ -37,9 +37,6 @@ const initState = {
 
 let store = mockStore( initState );
 store.dispatch = jest.fn();
-const eventClick = {
-  preventDefault: jest.fn()
-};
 
 describe('Pruebas en <AppRouter />>', () => {
 
@@ -52,7 +49,7 @@ describe('Pruebas en <AppRouter />>', () => {
       const userCred = await firebase.auth().signInWithEmailAndPassword('test@testing.cl', '1234567');
       user = userCred.user;
     
-      const wrapper = mount(
+      mount(
         <Provider store={ store }>
           <MemoryRouter>
             <AppRouter />
@@ -61,6 +58,7 @@ describe('Pruebas en <AppRouter />>', () => {
       );
     });
 
+    console.log({ user });
     expect( login ).toHaveBeenCalledWith( '74mb5MJvGoN3SMz4LbbVI7xPbxq1', null );
   });  
 });
